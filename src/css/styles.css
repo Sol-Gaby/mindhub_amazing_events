@@ -1,8 +1,6 @@
 :root {
-    --color1: rgb(255, 3, 3);
-    --color2: rgb(163, 85, 171);
-    background: linear-gradient(127deg, rgba(163, 85, 171, 1) 1%, rgba(255, 124, 212, 1) 26%, rgba(255, 226, 250, 1) 69%);
-    ;
+    --color1: linear-gradient(90deg, rgb(112, 0, 41) 0%, rgba(152, 0, 56, 0.584) 23%, rgba(228, 0, 84, 0.447) 43%, rgba(228, 0, 84, 0.433) 57%, rgba(152, 0, 56, 0.562) 76%, rgba(112, 0, 42, 1) 100%);;
+    --color2: linear-gradient(90deg, rgba(112, 0, 41, 0.896) 0%, rgba(152, 0, 56, 0.877) 23%, rgba(228, 0, 84, 0.841) 43%, rgba(228, 0, 84, 0.819) 57%, rgba(152, 0, 56, 0.852) 76%, rgba(112, 0, 41, 0.855) 100%);
     font-size: 16px;
 }
 
@@ -12,9 +10,13 @@
     padding: 0rem;
 }
 
+/* __________________TODO PARA EL INDEX Y APLICA A LAS DEMAS PAGINAS__________________ */
 /* body */
 .content_box {
     background: no-repeat center url(../images/luces-rosas.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* carrucel */
@@ -24,11 +26,9 @@
 }
 
 .carrucel_back {
-    /* background: no-repeat center url(../images/luces-rosas.jpg); */
-    /* background-color:rgb(255, 206, 254); */
-    background: rgb(163, 85, 171);
-    background: linear-gradient(90deg, rgba(163, 85, 171, 1) 1%, rgba(255, 124, 212, 1) 24%, rgba(255, 221, 244, 1) 49%, rgba(245, 120, 208, 1) 77%, rgba(163, 85, 171, 1) 100%);
+    background: var(--color1);
     height: 4rem;
+    backdrop-filter: blur(0.3rem);
 }
 
 /* header */
@@ -45,13 +45,20 @@
 
 /* footer */
 .footer {
-    /* background: no-repeat center url(../images/luces-rosas.jpg); */
-    background: rgb(163, 85, 171);
-    background: linear-gradient(90deg, rgba(163, 85, 171, 1) 1%, rgba(255, 73, 195, 1) 15%, rgba(255, 221, 244, 1) 40%, rgba(255, 216, 242, 1) 59%, rgba(255, 73, 195, 1) 86%, rgba(163, 85, 171, 1) 100%);
+    background: var(--color2);
 }
 
 .footer_h3 {
-
     color: white;
     text-shadow: 0.5rem 0.3rem 0.5rem black;
+}
+
+/* __________________PARA LA TABLA DE STATS__________________ */
+
+.fondo_table{
+    padding: 1rem;
+    background-color: rgba(143, 46, 105, 0.073);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.2rem rgba(0,0,0,0.2);
+    backdrop-filter: blur(0.5rem); 
 }
