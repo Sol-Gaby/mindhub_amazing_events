@@ -41,6 +41,14 @@
 .img_fit {
     height: 10rem;
     object-fit: cover;
+
+}
+.fondo_cards{
+    padding: 1rem;
+    background-color: rgba(143, 46, 105, 0.073);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.2rem rgba(0,0,0,0.2);
+    backdrop-filter: blur(0.5rem); 
 }
 
 /* footer */
