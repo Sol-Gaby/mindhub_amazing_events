@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.events-Contact Us</title>
+    <title>A.events-Home</title>
     <!-- css -->
     <link rel="stylesheet" href="./src/css/styles.css">
     <!-- bootstap -->
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Upcoming.html">Upcoming Events</a>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Past Events</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                        <a class="nav-link" href="Contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="stats.html">Stats</a>
@@ -79,30 +79,66 @@
     </div>
     <!-- FIN del Carrusel -->
     <!-- INICIO de header con filtro y busqueda -->
-    <header>
-
+    <header class="container-fluid py-4">
+        <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_table">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Category 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Category 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Category 3
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Category 4
+                </label>
+            </div>
+            <form class="d-flex m-0" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light mx-2" type="submit">Search</button>
+            </form>
+        </div>
     </header>
     <!-- FIN de Header -->
-    <main class="container-fluid p-5">
+    <main class="container-fluid p-4">
         <section>
-            <!-- INICIO del Form -->
-            <div class="container-fluid w-50 fondo_table">
-                <div class="my-3">
-                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name">
-                </div>
-                <div class="my-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="email@example.com">
-                </div>
-                <div class="my-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            <!-- INICIO de Cartas -->
+            <div class="container p-2 atras_card">
+                <div class="card m-3 w-100" style="max-width: 540px;">
+                    <div class="row g-1 carta">
+                        <div class="col-md-4">
+                            <img src="./src/images/Cinema.jpg" class="img_details" alt="cinema">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text table-group-divider p-1">Descripcion 1.
+                                    This is a wider card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text table-group-divider p-1">Descripcion 2.
+                                    This is a wider card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted p-1">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- FIN  del Form -->
+            <!-- FIN  de Cartas -->
         </section>
     </main>
     <!-- INICIO de Footer  -->
