@@ -14,177 +14,184 @@
 </head>
 
 <body class="content_box flex-grow-1">
-    <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
+    <!-- INICIO de header-->
+    <header class="container-fluid p-0">
+        <!-- Barra de Navegacion -->
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between p-2">
+            <a class="navbar-brand ps-2" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
                     alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Upcoming.html">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Past Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  active" aria-current="page" href="stats.html">Stats</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="">
+                <div class="container-fluid nav_home">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav_buton" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_buton" href="Upcoming.html">Upcoming
+                                    Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav_buton" href="#">Past Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav_buton" href="Contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active nav_buton" aria-current="page" href="stats.html">Stats</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <!-- FIN del Nav -->
+        <!-- FIN del Nav -->
 
-    <!-- INICIO del Carrusel -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner carrucel_back">
-            <div class="carousel-item active">
-                <h1 class="text-lg-center carrucel_h1">Home</h1>
+        <!-- INICIO del Carrusel -->
+        <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner carrucel_back">
+                <div class="carousel-item active">
+                    <h1 class="text-lg-center carrucel_h1">Home</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Upcoming Events</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Past Events</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Contact</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Stats</h1>
+                </div>
             </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Upcoming Events</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Past Events</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Contact</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Stats</h1>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"><a href="index.html"></a></span>
+                <span class="visually-hidden">Previous</span> -->
+                <a href="Contact.html"class="btn carousel-control-prev-icon" aria-hidden="true" role="button"></a>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span> -->
+                <a href="index.html"class="carousel-control-next-icon" aria-hidden="true" role="button"></a>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- FIN del Carrusel -->
-    <!-- INICIO de header con filtro y busqueda -->
-    <header class="container-fluid my-4">
-        <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_table">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 1
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 2
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 3
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 4
-                </label>
-            </div>
-            <form class="d-flex m-0" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light mx-2" type="submit">Search</button>
-            </form>
-        </div>
+        <!-- FIN del Carrusel -->
     </header>
     <!-- FIN de Header -->
-    <main class="flex-grow-1 p-5">
+
+    <main class="flex-grow-1 p-4">
+        <!-- INICIO filtro y busqueda  -->
+        <section>
+            <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_check ">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 4
+                    </label>
+                </div>
+                <form class="d-flex p-1 busqueda_int" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger mx-2" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
         <section>
             <!-- INICIO de la Tabla -->
-           <div class="container-fluid w-100 table-responsive-sm fondo_table">
-            <table class="table align-middle">
-                <thead>
-                    <tr>
-                        <th scope="col" colspan="3">Event statistics</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td>Events whith the highest percentage of attendance</td>
-                        <td>Events with the lowest percentage of attendance</td>
-                        <td>Events with larger capacity</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th scope="col" colspan="3">Upcoming Events statistics by category</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td>Categories</td>
-                        <td>Revenues</td>
-                        <td>Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th scope="col" colspan="3">Past Events statistics by category</th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <td>Categories</td>
-                        <td>Revenues</td>
-                        <td>Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-           </div>
+            <div class="container-fluid w-100 table-responsive-sm fondo_table">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">Event statistics</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Events whith the highest percentage of attendance</td>
+                            <td>Events with the lowest percentage of attendance</td>
+                            <td>Events with larger capacity</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">Upcoming Events statistics by category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Categories</td>
+                            <td>Revenues</td>
+                            <td>Percentage of attendance</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">Past Events statistics by category</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Categories</td>
+                            <td>Revenues</td>
+                            <td>Percentage of attendance</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <!-- FIN  de la Tabla-->
         </section>
     </main>

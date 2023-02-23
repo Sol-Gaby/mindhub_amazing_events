@@ -15,36 +15,38 @@
 
 <body class="content_box">
     <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
-                    alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Upcoming.html">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Past Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="stats.html">Stats</a>
-                    </li>
-                </ul>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between p-2">
+        <a class="navbar-brand ps-2" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
+                alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
+        <nav class="">
+            <div class="container-fluid nav_home">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav_buton" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_buton" href="Upcoming.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav_buton" href="#">Past Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav_buton" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav_buton" href="stats.html">Stats</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- FIN del Nav -->
 
     <!-- INICIO del Carrusel -->
@@ -78,9 +80,10 @@
         </button>
     </div>
     <!-- FIN del Carrusel -->
+    
     <!-- INICIO de header con filtro y busqueda -->
     <header class="container-fluid py-4">
-        <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_table">
+        <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_check">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckChecked">
@@ -105,9 +108,9 @@
                     Category 4
                 </label>
             </div>
-            <form class="d-flex m-0" role="search">
+            <form class="d-flex p-1 busqueda_int" role="search">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light mx-2" type="submit">Search</button>
+                <button class="btn btn-outline-danger mx-2" type="submit">Search</button>
             </form>
         </div>
     </header>

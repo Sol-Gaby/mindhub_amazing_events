@@ -14,105 +14,112 @@
 </head>
 
 <body class="content_box">
-    <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
+    <!-- INICIO de header-->
+    <header class="container-fluid p-0">
+        <!-- Barra de Navegacion -->
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between p-2">
+            <a class="navbar-brand ps-2" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
                     alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Upcoming.html">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Past Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="stats.html">Stats</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="">
+                <div class="container-fluid nav_home">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav_buton" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active nav_buton" aria-current="page" href="Upcoming.html">Upcoming
+                                    Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav_buton" href="#">Past Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav_buton" href="Contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav_buton" href="stats.html">Stats</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <!-- FIN del Nav -->
+        <!-- FIN del Nav -->
 
-    <!-- INICIO del Carrusel -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner carrucel_back">
-            <div class="carousel-item active">
-                <h1 class="text-lg-center carrucel_h1">Home</h1>
+        <!-- INICIO del Carrusel -->
+        <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner carrucel_back">
+                <div class="carousel-item active">
+                    <h1 class="text-lg-center carrucel_h1">Home</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Upcoming Events</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Past Events</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Contact</h1>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="text-lg-center carrucel_h1">Stats</h1>
+                </div>
             </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Upcoming Events</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Past Events</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Contact</h1>
-            </div>
-            <div class="carousel-item">
-                <h1 class="text-lg-center carrucel_h1">Stats</h1>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"><a href="index.html"></a></span>
+                <span class="visually-hidden">Previous</span> -->
+                <a href="index.html"class="btn carousel-control-prev-icon" aria-hidden="true" role="button"></a>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span> -->
+                <a href="Contact.html"class="carousel-control-next-icon" aria-hidden="true" role="button"></a>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- FIN del Carrusel -->
-    <!-- INICIO de header con filtro y busqueda -->
-    <header class="container-fluid py-4">
-        <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_table">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 1
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 2
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 3
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Category 4
-                </label>
-            </div>
-            <form class="d-flex m-0" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light mx-2" type="submit">Search</button>
-            </form>
-        </div>
+        <!-- FIN del Carrusel -->
     </header>
     <!-- FIN de Header -->
+
     <main class="container-fluid p-4">
+        <!-- INICIO filtro y busqueda  -->
+        <section>
+            <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_check ">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Category 4
+                    </label>
+                </div>
+                <form class="d-flex p-1 busqueda_int" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger mx-2" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
         <section>
             <!-- INICIO de Cartas -->
             <div class="container p-2">
@@ -122,7 +129,8 @@
                             <img src="./src/images/Cinema.jpg" class="card-img-top img_fit" alt="cinema">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
                                     to additional content. This content is a little bit longer.</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
@@ -133,7 +141,8 @@
                             <img src="./src/images/Costume_Party.jpg" class="card-img-top img_fit" alt="party">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
                                     to additional content. This content is a little bit longer.</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
@@ -144,8 +153,9 @@
                             <img src="./src/images/Food_Fair.jpg" class="card-img-top img_fit" alt="food">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                    to additional content.</p>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
                         </div>
@@ -155,7 +165,8 @@
                             <img src="./src/images/Marathon.jpg" class="card-img-top img_fit" alt="maraton">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
                                     to additional content. This content is a little bit longer.</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
@@ -166,7 +177,8 @@
                             <img src="./src/images/Cinema.jpg" class="card-img-top img_fit" alt="cinema">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
                                     to additional content. This content is a little bit longer.</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
@@ -177,14 +189,15 @@
                             <img src="./src/images/Costume_Party.jpg" class="card-img-top img_fit" alt="party">
                             <div class="card-body fondo_cards">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer..</p>
                                 <a href="#" class="btn btn-outline-danger">See more</a>
                             </div>
                         </div>
                     </div>
                 </div>
-               </div>
+            </div>
             <!-- FIN  de Cartas -->
         </section>
     </main>
@@ -194,19 +207,30 @@
             <div>
                 <div class="d-flex justify-content-between">
                     <div class="redes">
-                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                          </svg></a>
-                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                          </svg></a>
-                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                          </svg></a>
+                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg></a>
+                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                            </svg></a>
+                        <a href="#" class="redes m-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                <path
+                                    d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                            </svg></a>
                     </div>
                     <div class="d-flex justify-content-between">
                         <h3 class="footer_h3">COHORT</h3>

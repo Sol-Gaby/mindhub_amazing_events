@@ -24,6 +24,9 @@
     display: flex;
     justify-content: space-between;
 }
+.nav_buton{
+    margin-right: 1rem;
+}
 
 /* carrucel */
 .carrucel_h1 {
@@ -37,11 +40,16 @@
     backdrop-filter: blur(0.3rem);
 }
 
-/* header */
-.cont_check {
-    display: flex;
-    flex-direction: row;
+/* header  y check*/
+.fondo_check{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(143, 46, 105, 0.073);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.2rem rgba(0,0,0,0.2);
+    backdrop-filter: blur(0.5rem); 
 }
+
 
 /* grupo de cartas */
 .img_fit {
@@ -70,6 +78,7 @@
 /* __________________PARA LA TABLA DE STATS__________________ */
 
 .fondo_table{
+    width: 60% !important;
     padding: 1rem;
     background-color: rgba(143, 46, 105, 0.073);
     border-radius: 0.5rem;
@@ -94,4 +103,23 @@
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 0.2rem rgba(0,0,0,0.2);
     backdrop-filter: blur(0.5rem); 
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .cont_check{
+        display: flex;
+        flex-direction: column;
+    }
+    .busqueda_int{
+        margin-top: 1rem;
+    }
+    .carrucel_h1{
+        text-align: center;
+    }
+    .fondo_table{
+        width: 90%;
+        padding: 0%;
+        margin: 0%;
+    }
 }

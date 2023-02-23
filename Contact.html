@@ -15,36 +15,38 @@
 
 <body class="content_box">
     <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
-                    alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Upcoming.html">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Past Events</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="stats.html">Stats</a>
-                    </li>
-                </ul>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between p-2">
+        <a class="navbar-brand ps-2" href="index.html"><img src="./src/images/LogoAmazingEvents.png"
+                alt="Logo de la empresa" class="img_logo" width="130" height="30"></a>
+        <nav class="">
+            <div class="container-fluid nav_home">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav_buton" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_buton" href="Upcoming.html">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav_buton" href="#">Past Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active nav_buton" aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav_buton" href="stats.html">Stats</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- FIN del Nav -->
 
     <!-- INICIO del Carrusel -->
@@ -66,18 +68,19 @@
                 <h1 class="text-lg-center carrucel_h1">Stats</h1>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"><a href="index.html"></a></span>
+            <span class="visually-hidden">Previous</span> -->
+            <a href="Upcoming.html"class="btn carousel-control-prev-icon" aria-hidden="true" role="button"></a>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span> -->
+            <a href="stats.html"class="carousel-control-next-icon" aria-hidden="true" role="button"></a>
         </button>
     </div>
     <!-- FIN del Carrusel -->
+
     <!-- INICIO de header con filtro y busqueda -->
     <header>
 
@@ -86,11 +89,10 @@
     <main class="container-fluid p-5">
         <section>
             <!-- INICIO del Form -->
-            <div class="container-fluid w-50 fondo_table">
+            <div class="container-fluid fondo_table">
                 <div class="my-3">
                     <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
                 </div>
                 <div class="my-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
