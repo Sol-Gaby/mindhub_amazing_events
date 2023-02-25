@@ -9,7 +9,7 @@ console.log(eventCartas);
 function printEvents()
 {
     for (let event of eventos) {
-        if (event.date > "2021-12-31") {
+        if (event.date < "2022-01-01") {
             let cartaEv = `<div class="card carta_body">
             <img src="${event.image}" class="card-img-top img_fit" alt="cinema">
                 <div class="card-body fondo_cards">
@@ -24,10 +24,9 @@ function printEvents()
     }
 }
 
-
 function printSelected()
 {
-    let cartaEv = document.getElementById('cardEvents_up');
+    let cartaEv = document.getElementById('cardEvents_past');
     cartaEv.innerHTML = eventCartas.join('')
 }
 console.log(eventCartas);
