@@ -53,7 +53,7 @@
 
 /* grupo de cartas */
 .img_fit {
-    height: 10rem;
+    height: 12rem;
     object-fit: cover;
 }
 .fondo_cards{
@@ -63,7 +63,9 @@
     box-shadow: 0 0.5rem 0.2rem rgba(0,0,0,0.2);
     backdrop-filter: blur(0.5rem); 
 }
-
+.carta_body{
+    width: 30% !important;
+}
 /* footer */
 .footer {
     background: var(--color2);
@@ -104,6 +106,7 @@
     backdrop-filter: blur(0.5rem); 
 }
 
+/* MEDIAS QUERY */
 
 @media (min-width: 320px) and (max-width: 768px) {
     .cont_check{
@@ -121,4 +124,12 @@
         padding: 0%;
         margin: 0%;
     }
+    .carta_body{
+        width: 90% !important;
+    }
 }
+/* @media (min-width:1200px) {
+    .carta_body{
+        width: 40% !important;
+    }
+} */

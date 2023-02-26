@@ -7,7 +7,7 @@ let eventCartas=[];
 function crearEvents(){
     
     for (let event of eventos){
-        let cartaEv = `<div class="card p-0 g-4 mx-1">
+        let cartaEv = `<div class="card g-4 p-0 mx-1 carta_body">
         <img src="${event.image}" class="card-img-top img_fit" alt="cinema">
             <div class="card-body fondo_cards">
                 <h5 class="card-title">${event.name}</h5>
@@ -19,6 +19,7 @@ function crearEvents(){
     eventCartas.push(cartaEv)
     } 
 }
+
 console.log(eventCartas);
 
 function printEvents(){
