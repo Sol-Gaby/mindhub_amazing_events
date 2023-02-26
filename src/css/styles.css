@@ -2,6 +2,8 @@
     --color1: linear-gradient(90deg, rgba(112, 0, 41, 0.921) 0%, rgba(152, 0, 56, 0.584) 23%, rgba(228, 0, 84, 0.447) 43%, rgba(228, 0, 84, 0.433) 57%, rgba(152, 0, 56, 0.562) 76%, rgba(112, 0, 41, 0.89) 100%);;
     --color2: linear-gradient(90deg, rgba(112, 0, 41, 0.83) 0%, rgba(152, 0, 56, 0.811) 23%, rgba(228, 0, 84, 0.707) 43%, rgba(228, 0, 84, 0.704) 57%, rgba(152, 0, 56, 0.83) 76%, rgba(112, 0, 41, 0.778) 100%);
     font-size: 16px;
+    --color3: rgb(201, 164, 192);
+    --color4: rgb(148, 119, 141);
 }
 
 * {
@@ -74,6 +76,21 @@
 .footer_h3 {
     color: white;
     text-shadow: 0.5rem 0.3rem 0.5rem black;
+}
+
+svg{
+    width: 2rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    filter: blur(0.04rem);
+}
+svg:hover{
+    background-color: var(--color3);
+    border-radius: 1rem;
+    padding: 0.1rem;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 2px 4px 8px 1px rgba(255, 150, 225, 0.56);
+    filter: none;
 }
 
 /* __________________PARA LA TABLA DE STATS__________________ */
