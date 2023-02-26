@@ -128,8 +128,8 @@
         width: 90% !important;
     }
 }
-/* @media (min-width:1200px) {
+@media (min-width:768px) and (max-width: 969px){
     .carta_body{
         width: 40% !important;
     }
-} */
+}
