@@ -56,16 +56,12 @@
                 <h1 class="text-lg-center carrucel_h1">Contact</h1>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls">
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"><a href="index.html"></a></span>
-            <span class="visually-hidden">Previous</span> -->
-            <a href="pastEvents.html"class="btn carousel-control-prev-icon" aria-hidden="true" role="button"></a>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls">
-            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span> -->
-            <a href="stats.html"class="carousel-control-next-icon" aria-hidden="true" role="button"></a>
-        </button>
+        <div class="carousel-control-prev flecha" data-bs-target="#carouselExampleControls">
+            <a href="pastEvents.html" class="btn carousel-control-prev-icon" aria-hidden="true" ></a>
+        </div>
+        <div class="carousel-control-next flecha" data-bs-target="#carouselExampleControls">
+            <a href="stats.html" class="btn carousel-control-next-icon" aria-hidden="true" ></a>
+        </div>
     </div>
     <!-- FIN del Carrusel -->
 
@@ -75,25 +71,25 @@
     </header>
     <!-- FIN de Header -->
     <main class="container-fluid p-5">
-        <section>
+        <div>
             <!-- INICIO del Form -->
             <div class="container-fluid fondo_table">
                 <div class="my-3">
-                    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    <label for="nombre" class="form-label">Full Name</label>
+                    <input type="email" class="form-control" id="nombre" placeholder="name">
                 </div>
                 <div class="my-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <label for="correo" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="correo"
                         placeholder="email@example.com">
                 </div>
                 <div class="my-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                    <label for="texto" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="texto" rows="8"></textarea>
                 </div>
             </div>
             <!-- FIN  del Form -->
-        </section>
+        </div>
     </main>
     <!-- INICIO de Footer  -->
     <footer class="footer">
