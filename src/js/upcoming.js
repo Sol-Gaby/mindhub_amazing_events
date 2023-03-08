@@ -34,7 +34,8 @@ function crearUpEv(arrayDeEventos){
                     <a href="./details.html?id=${event._id}" class="btn btn-outline-danger mb-0">See more</a>
                 </div>
             </div>`
-            eventCartas.push(cartaEv)
+
+            eventCartas.push(cartaEv);
         }
     }
     return eventCartas;
@@ -53,7 +54,7 @@ function crearUpEv(arrayDeEventos){
 
 function printEvents(array, x){
     let cartaEv = document.getElementById(x);
-    let templates = crearUpEv(array) //templates va a guardar el array con todos los templates de cada card
+    let templates = crearUpEv(array); //templates va a guardar el array con todos los templates de cada card
     cartaEv.innerHTML = templates.join('')
 }
 
