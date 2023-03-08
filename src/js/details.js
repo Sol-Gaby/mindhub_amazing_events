@@ -7,7 +7,7 @@ let params = new URLSearchParams(query);
 let id_query = params.get('id');
 console.log(params);
 console.log(id_query);
-// buscar con find el elemento en el array
+// buscar con find el elemento en el array y
 // reenderizar corectamente la pagina de los details de eventos
 
 function defineDetails(events){
