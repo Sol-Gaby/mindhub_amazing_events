@@ -3,7 +3,6 @@ const eventos = data.events;
 console.log(eventos);
 
 let eventCartas = [];
-
 console.log(eventCartas);
 
 function printEvents()
