@@ -71,44 +71,12 @@
     <!-- FIN de Header -->
 
     <main class="container-fluid p-4">
-        <!-- INICIO filtro y busqueda  -->
-        <div>
-            <div class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_check ">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"  id="check_1">
-                    <label class="form-check-label" for="check_1">
-                        Category 1
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"  id="check_2">
-                    <label class="form-check-label" for="check_2">
-                        Category 2
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"  id="check_3">
-                    <label class="form-check-label" for="check_3">
-                        Category 3
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"  id="check_4">
-                    <label class="form-check-label" for="check_4">
-                        Category 4
-                    </label>
-                </div>
-                <form class="d-flex p-1 busqueda_int" role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-danger mx-2" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-        <div>
+        <!-- INICIO filtro y busqueda  -->        
+       <div id="id_check" class="container-fluid d-flex cont_check justify-content-between align-items-center fondo_check "></div>
             <!-- INICIO de Cartas -->
             <div class="container">
                 <div class="container-fluid d-flex row-cols-1">
-                    <div class="row row-cols-md-3 justify-content-center" id="cardEvents_past">
+                    <div class="row row-cols-md-3 justify-content-center" id="cardEvents_main">
                        <!--la carta esta en main.js para ser dinamica -->
                     </div>
                 </div>
@@ -166,6 +134,9 @@
         crossorigin="anonymous"></script>
         <script src="./src/js/data_ae_1.js"></script>
         <script src="./src/js/past.js"></script>
+        <script src="./src/js/details.js"></script>
+        <script src="./src/js/check.js"></script>
+        <script src="./src/js/filter.js"></script>
 </body>
 
 </html>

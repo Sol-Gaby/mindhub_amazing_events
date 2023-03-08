@@ -13,7 +13,7 @@ function captureData()
     // console.log(filtro);
 
     if (filtro.length > 0) {
-        console.log(filtro);
+        // console.log(filtro);
         printEvents(filtro, 'cardEvents_main');
     } else {
         notfound('cardEvents_main');
