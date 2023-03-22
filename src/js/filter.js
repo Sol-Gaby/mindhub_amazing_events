@@ -6,14 +6,13 @@ function captureData()
     let check = Array.from(document.querySelectorAll('.check_class:checked')).map(each => each.value)
     // console.log(texto);
     // console.log(check);
-    let filtro = eventos.filter(each =>
-    {
+    let filtro = eventos.filter(each =>{
         return (each.name.toLowerCase().includes(texto)) && (check.length === 0 || check.includes(each.category))
     })
     // console.log(filtro);
 
     if (filtro.length > 0) {
-        // console.log(filtro);
+
         printEvents(filtro, 'cardEvents_main');
     } else {
         notfound('cardEvents_main');
