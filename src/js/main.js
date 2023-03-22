@@ -44,7 +44,3 @@ async function fetchApi(){
 }
 
 fetchApi();
-// console.log(respuestaApi);
-
-// printEvents(eventos, 'cardEvents_main');
-// captureData();
