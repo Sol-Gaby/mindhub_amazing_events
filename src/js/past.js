@@ -1,15 +1,9 @@
-// console.log(data);
-// const eventos = data.events;
-// console.log(eventos);
-
-// console.log(eventCartas);
-
 function crearPastEv(arrayDeEventos){
     let eventCartas = [];
     let cartaEv;
     // console.log(arrayDeEventos);
     for (let event of arrayDeEventos) {
-        if (event.date <= "2022-01-01") {
+        if (event.date <= "2022-01-01T00:00:00.000Z") {
             cartaEv = `<div class="card g-4 p-0 mx-3 carta_body">
             <img src="${event.image}" class="card-img-top img_fit" alt="cinema">
                 <div class="card-body fondo_cards">
@@ -20,6 +14,7 @@ function crearPastEv(arrayDeEventos){
             </div>`
 
             eventCartas.push(cartaEv);
+            console.log(eventCartas);
         }
     }
     return eventCartas;

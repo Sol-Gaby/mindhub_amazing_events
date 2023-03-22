@@ -128,7 +128,11 @@ svg:hover{
     backdrop-filter: blur(0.5rem); 
 }
 .imagen_details{
-    width: 12rem;
+    width: 15rem;
+}
+.columna{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* MEDIAS QUERY */

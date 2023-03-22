@@ -1,23 +1,15 @@
-// const eventos = data.events;
-// console.log(eventos);
-// definir la ruta dinamica: lo hice en home
-// capturar el dato dinamico
 let query = location.search;
 let params = new URLSearchParams(query);
 let id_query = params.get('id');
-// console.log(params);
-// console.log(id_query);
-// buscar con find el elemento en el array
-// reenderizar corectamente la pagina de los details de eventos
 
 function defineDetails(events)
 {
 
-    return `<div class="row g-1 carta ancho_details" id="details_card">
+    return `<div class="row g-1 carta ancho_details columna" id="details_card">
                 <div class="col-md-4">
                     <img src="${events.image}" class="img_details imagen_details" alt="${events.name}">
                     </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <div class="card-body text-center">
                                 <h5 class="card-title">${events.name}</h5>
                                 <p class="table-group-divider text-bg-dark">Description:</p>

@@ -1,12 +1,16 @@
 // let eventos = data.events;
 
-function captureData()
+async function captureData()
 {
+    let urlApi = "https://api-amazingevents.onrender.com/api/amazing-events";
+    let fetchResponse = await fetch(urlApi);
+    let response = await fetchResponse.json();
+    let arrayEventos = response.events;
     let texto = document.getElementById('id_search').value
     let check = Array.from(document.querySelectorAll('.check_class:checked')).map(each => each.value)
     // console.log(texto);
     // console.log(check);
-    let filtro = eventos.filter(each =>{
+    let filtro = arrayEventos.filter(each =>{
         return (each.name.toLowerCase().includes(texto)) && (check.length === 0 || check.includes(each.category))
     })
     // console.log(filtro);

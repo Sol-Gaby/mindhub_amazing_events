@@ -1,6 +1,3 @@
-// const eventos = data.events;
-// console.log(eventos);
-
 function crearEvents(arrayDeEventos){
     let eventCartas=[]; //eventscartas va a ser el array con todos mis templ de cada evento
     for (let event of arrayDeEventos){

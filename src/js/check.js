@@ -1,10 +1,18 @@
 let category = []
-data.events.forEach(each =>{
+async function imprimirCheck(){
+    let urlApi = "https://api-amazingevents.onrender.com/api/amazing-events";
+    let fetchResponse = await fetch(urlApi);
+    let response = await fetchResponse.json();
+    let arrayEventos = response.events;
+     arrayEventos.forEach(each =>{
     if (!category.includes(each.category)) {
         category.push(each.category)
     }
+    printCheck(category);
 })
 console.log(category);
+}
+imprimirCheck()
 
 function printCheck(array_tipos)
 {
@@ -25,4 +33,4 @@ function printCheck(array_tipos)
 //con onclick capturamos el evento click que le vamos a recolectar, a el le asignamos una funcion donde ira el nombre de la funcion donde capturamos los datos, en nuestro caso captureData
 //para el caso de la barra de busqueda tenemos que usar otro tipo de evento que no sea el onclick, como onkeyup que captura cada vez que se levanta una tecla, mas recomendada que enter
 
-printCheck(category);
+// printCheck(category);
