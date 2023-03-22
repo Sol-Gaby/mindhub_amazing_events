@@ -1,5 +1,5 @@
-const eventos = data.events;
-console.log(eventos);
+// const eventos = data.events;
+// console.log(eventos);
 
 function crearEvents(arrayDeEventos){
     let eventCartas=[]; //eventscartas va a ser el array con todos mis templ de cada evento
@@ -30,12 +30,9 @@ async function fetchApi(){
     try{
         let urlApi = 'https://api-amazingevents.onrender.com/api/amazing-events';
         let fetchResponse = await (await fetch(urlApi));
-        console.log(fetchResponse);
         let response = await fetchResponse.json();
-        console.log(response);
         // json decodifica la respuesta del fetcheo en un json para transformar de js a json y al revez podemos usar los metodos JSON.parse() y JSOn.stringify()
         printEvents(response.events, 'cardEvents_main' );
-        console.log(printEvents);
         return response;
     }catch(error){
         console.log('ocurrio un error');

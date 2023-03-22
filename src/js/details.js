@@ -35,10 +35,6 @@ function defineDetails(events)
                 </div>`
 }
 
-// function printTemplates()
-// {
-
-// }
 
 async function fetchDetails()
 {
@@ -47,10 +43,8 @@ async function fetchDetails()
         let fetchResponseD = await fetch(urlApi);
         let responseDetails = await fetchResponseD.json();
         console.log(responseDetails);
-        // return responseDetails;
         let container = document.querySelector('#details_card')
         evento = responseDetails.events.find(each => each.id == id_query)
-        // console.log(evento);
         let details = defineDetails(evento)
         container.innerHTML = details;
     } catch (error) {
@@ -59,5 +53,3 @@ async function fetchDetails()
     }
 }
 fetchDetails();
-// printTemplates();
-// printTemplates();
