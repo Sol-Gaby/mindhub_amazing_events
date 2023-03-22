@@ -1,16 +1,17 @@
-const eventos = data.events;
-console.log(eventos);
+// const eventos = data.events;
+// console.log(eventos);
 // definir la ruta dinamica: lo hice en home
 // capturar el dato dinamico
 let query = location.search;
 let params = new URLSearchParams(query);
 let id_query = params.get('id');
-console.log(params);
-console.log(id_query);
+// console.log(params);
+// console.log(id_query);
 // buscar con find el elemento en el array
 // reenderizar corectamente la pagina de los details de eventos
 
-function defineDetails(events){
+function defineDetails(events)
+{
 
     return `<div class="row g-1 carta ancho_details" id="details_card">
                 <div class="col-md-4">
@@ -34,12 +35,29 @@ function defineDetails(events){
                 </div>`
 }
 
-function printTemplates(){
-    let container = document.querySelector('#details_card')
-    evento = eventos.find(each => each._id == id_query)
-    console.log(evento);
-    let details = defineDetails(evento)
-    container.innerHTML = details
-}
+// function printTemplates()
+// {
 
-printTemplates();
+// }
+
+async function fetchDetails()
+{
+    try {
+        let urlApi = 'https://api-amazingevents.onrender.com/api/amazing-events';
+        let fetchResponseD = await fetch(urlApi);
+        let responseDetails = await fetchResponseD.json();
+        console.log(responseDetails);
+        // return responseDetails;
+        let container = document.querySelector('#details_card')
+        evento = responseDetails.events.find(each => each.id == id_query)
+        // console.log(evento);
+        let details = defineDetails(evento)
+        container.innerHTML = details;
+    } catch (error) {
+        console.log('ocurrio un error en details');
+        console.log(error);
+    }
+}
+fetchDetails();
+// printTemplates();
+// printTemplates();

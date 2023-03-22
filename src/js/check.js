@@ -1,6 +1,5 @@
 let category = []
-data.events.forEach(each =>
-{
+data.events.forEach(each =>{
     if (!category.includes(each.category)) {
         category.push(each.category)
     }

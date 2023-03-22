@@ -9,7 +9,7 @@ function crearEvents(arrayDeEventos){
             <div class="card-body fondo_cards py-4">
                 <h5 class="card-title my-2">${event.name}</h5>
                 <p class="card-text my-4">${event.description}</p>
-                <a href="./details.html?id=${event._id}" class="btn btn-outline-danger boton">See more</a>
+                <a href="./details.html?id=${event.id}" class="btn btn-outline-danger boton">See more</a>
             </div>
     </div>`
     eventCartas.push(cartaEv)
@@ -21,25 +21,30 @@ return eventCartas; //retorno ese array de events
 
 function printEvents(array, x){
     let cartaEv = document.getElementById(x);
-    let templates = crearEvents(array)//templates va a guardar el array con todos los templates de cada card
+    let templates = crearEvents(array)
+    //templates va a guardar el array con todos los templates de cada card
     cartaEv.innerHTML = templates.join('')
 }
 
 async function fetchApi(){
     try{
-        let urlApi = 'https://mh-h0bh.onrender.com/api/mindy'
+        let urlApi = 'https://api-amazingevents.onrender.com/api/amazing-events';
         let fetchResponse = await (await fetch(urlApi));
         console.log(fetchResponse);
-        let response = fetchResponse.json();
+        let response = await fetchResponse.json();
+        console.log(response);
         // json decodifica la respuesta del fetcheo en un json para transformar de js a json y al revez podemos usar los metodos JSON.parse() y JSOn.stringify()
-        printEvents(response.products, x )
+        printEvents(response.events, 'cardEvents_main' );
+        console.log(printEvents);
+        return response;
     }catch(error){
         console.log('ocurrio un error');
         console.log(error);
     }
 }
 
-
-printEvents(eventos, 'cardEvents_main');
 fetchApi();
+// console.log(respuestaApi);
+
+// printEvents(eventos, 'cardEvents_main');
 // captureData();
